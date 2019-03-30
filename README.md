@@ -1,0 +1,2 @@
+# datamaid
+Automated EDA
