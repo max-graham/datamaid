@@ -1,5 +1,10 @@
 language: python
 script: python -m unittest
 deploy:
-  password:
-    secure: Jp+fgHJo6j056O8snK+gZ5+ZdW/gFojor++EiDNv9dy07uVjMsY54R/se28V6zMgrtCXOGn+heVlbAzm5eQNCJ/NrA6d+bed5LEzegVcIKWjp6GucgjNyTN4z8g5Tzb61KHPgM+MdrfRAlKhXclpW8Pcag/Wf0zLAkfKENJcTgvQYhd5V36c6Y7jaBhfYxxjYeqW+v6Nn36Nw7H1UQlY4WCzgFrxg5z9xZuoa7cjtzJyMWa9Nf/p7fBKhGT3Xl0TepdUDvYnZ4ehx10B46aur1eyPs/6fYK/2HhSJWxg+Z8kLBKljjqw1DcQ0y6hAsOqJrOVLPgyPqKAkeNZk2y92MjQHyeawRQQzObD+PFaVxv6ZWGjkroFw3XN90iE/MenXX8O/y6y4Hwxfoyq3HflE1qxN+mGpPCV/h93KkEnUn+Y0C3l3oNfeM0cvWuHcLQe8D7Td8s7AKpWvx3S1Q8dtKtcMliBMeRQN1Q1aPu90fBgstQpE17u/nnDBalCOkKpJVbxb+1sCxVQi8Lprbsg+R+s9KeQChYVYgcxfHIVu8Cr03HsoGtuLU/KEKQbF6CaFu+KkKrmwHivlQpcl6uX+ODTU9YoROQgAxgrEbT7Yv0jIIV1wnhl1PMqsMsLQrqvhRPUnFjG3yYSwFCkEEC/puR0yPA4VswrZG0bE6LDQJM=
+    provider: pypi
+    username: "__token__"
+    password:
+        secure: Jp+fgHJo6j056O8snK+gZ5+ZdW/gFojor++EiDNv9dy07uVjMsY54R/se28V6zMgrtCXOGn+heVlbAzm5eQNCJ/NrA6d+bed5LEzegVcIKWjp6GucgjNyTN4z8g5Tzb61KHPgM+MdrfRAlKhXclpW8Pcag/Wf0zLAkfKENJcTgvQYhd5V36c6Y7jaBhfYxxjYeqW+v6Nn36Nw7H1UQlY4WCzgFrxg5z9xZuoa7cjtzJyMWa9Nf/p7fBKhGT3Xl0TepdUDvYnZ4ehx10B46aur1eyPs/6fYK/2HhSJWxg+Z8kLBKljjqw1DcQ0y6hAsOqJrOVLPgyPqKAkeNZk2y92MjQHyeawRQQzObD+PFaVxv6ZWGjkroFw3XN90iE/MenXX8O/y6y4Hwxfoyq3HflE1qxN+mGpPCV/h93KkEnUn+Y0C3l3oNfeM0cvWuHcLQe8D7Td8s7AKpWvx3S1Q8dtKtcMliBMeRQN1Q1aPu90fBgstQpE17u/nnDBalCOkKpJVbxb+1sCxVQi8Lprbsg+R+s9KeQChYVYgcxfHIVu8Cr03HsoGtuLU/KEKQbF6CaFu+KkKrmwHivlQpcl6uX+ODTU9YoROQgAxgrEbT7Yv0jIIV1wnhl1PMqsMsLQrqvhRPUnFjG3yYSwFCkEEC/puR0yPA4VswrZG0bE6LDQJM=
+    on:
+        tags: true
+    skip_existing: true
