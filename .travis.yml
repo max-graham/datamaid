@@ -6,6 +6,7 @@ before_script:
 env:
     global:
         - CC_TEST_REPORTER_ID=457cd3fff91b5772e6b9320cfe30152436259e3ff1a3992de71e4dc86df7f4b1
+install: python setup.py install
 script: python -m unittest
 deploy:
     provider: pypi
