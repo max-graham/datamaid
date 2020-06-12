@@ -3,11 +3,12 @@ env:
     global:
         - CC_TEST_REPORTER_ID=70c936de6aa7d38a8a02d6188245d023ec62fa1845b163ef61dbab79b543e46e
 before_script:
+    - pip install coverage
     - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
     - chmod +x ./cc-test-reporter
     - ./cc-test-reporter before-build
 install: python setup.py install
-script: python -m unittest
+script: coverage -m unittest
 after_script:
     - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 deploy:
