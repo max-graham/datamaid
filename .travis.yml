@@ -12,7 +12,7 @@ before_script:
 script:
     - make clean
     - coverage run setup.py test
-    - coverage xml
+    - coverage xml --omit="/home/travis/virtualenv/*"
 after_script:
     - ./cc-test-reporter after-build --debug --coverage-input-type coverage.py --exit-code $TRAVIS_TEST_RESULT
 deploy:
