@@ -12,7 +12,6 @@ before_script:
     - ./cc-test-reporter before-build
 script: coverage run -m unittest
 after_script:
-    - coverage xml
     - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 deploy:
     provider: pypi
