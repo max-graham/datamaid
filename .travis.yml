@@ -1,7 +1,7 @@
 language: python
 env:
     global:
-        - CC_TEST_REPORTER_ID=457cd3fff91b5772e6b9320cfe30152436259e3ff1a3992de71e4dc86df7f4b1
+        - CC_TEST_REPORTER_ID=70c936de6aa7d38a8a02d6188245d023ec62fa1845b163ef61dbab79b543e46e
 before_script:
     - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
     - chmod +x ./cc-test-reporter
